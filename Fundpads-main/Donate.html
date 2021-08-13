@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--Navigation Bar Section----->
+     <div class="container">
+         <div class="navbar">
+             <img src="logo.png" class="logo">
+             <nav>
+               <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="About Us.html">About Us</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+                 <li><a href="Our Work.html">Our Work</a></li>
+                 <li><a href="Collection.html">Collections</a></li>
+               </ul>
+             </nav>
+             <script  >
+                function tabColors(){
+                   var indextab = document.getElementById('indextab');
+                   indextab.addEventListener('click', function(e) {
+                   indextab.style.backgroundColor = "white";
+                   });
+                   var aboutustab = document.getElementById('aboutustab');
+                   aboutustab.addEventListener('click', function(e) {
+                   aboutustab.style.backgroundColor = "white";
+                   });
+                   var contacttab = document.getElementById('contacttab');
+                   contacttab.addEventListener('click', function(e) {
+                   contacttab.style.backgroundColor = "white";
+                   });
+                   var ourworktab = document.getElementById('ourworktab');
+                   ourworktab.addEventListener('click', function(e) {
+                   ourworktab.style.backgroundColor = "white";
+                   });
+                   var collectiontab = document.getElementById('collectiontab');
+                   collectiontab.addEventListener('click', function(e) {
+                   collectiontab.style.backgroundColor = "white";
+                   });
+                  }
+                  tabColors();
+
+              </script>
+             <div class="btn"> <a href="Donate.html">Donate</a></div>
+         </div>
+
+
+
+
+
+
+     <!--- Main Page: image and paragraph side by side --->
+
+       <div class="home-page-content">
+         <div class="flexbox-item flex-item-1">
+            <h2>Payment Details [Visa, Amex and MasterCard] </h2>
+            <p> Example of Visa card number : 4111111111111 <p>
+             <form name="form1" action="#">
+
+            <ul>
+              <li><input type='text' name='text1' placeholder="Name and Last Name" inputmode="number" /></li> </ul>
+            <ul>  <li><input type='text' name='text2' placeholder="Card Number" inputmode="number" /></li> </ul>
+            <ul>  <li><input type='text' name='text3' placeholder="Expiry date" inputmode="number" /></li> </ul>
+
+
+            <ul>  <li><input type='text' name='text4' placeholder="Code" inputmode="number"/></li> </ul>
+
+
+            <ul>
+              <li class="submit"><input type="submit" name="submit" value="Submit" onclick="cardnumber(document.form1.text2)"/></li>
+            </ul>
+              </form>
+            </div>
+              <script src="functions.js" ></script>
+         </div>
+
+
+  </body>
+</html>

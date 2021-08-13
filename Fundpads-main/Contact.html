@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+
+        <!---The reset button Script for forms--->
+        <script type="text/javascript">
+            $("#reset").on("click", function () {
+              {
+              return this.defaultSelected;
+              });
+            });
+        </script>
+
+</head>
+  <body>
+
+
+          <!---           This is navigation bar                          ---->
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Our work.html">Our Work</a></li>
+                <li><a href="Collection.html">Collections</a></li>
+              </ul>
+            </nav>
+            <div class="btn"> <a href="Donate.html">Donate</a></div>
+        </div>
+
+
+
+
+
+      <!--                   This is the form                           ---->
+      <form id="myform">
+        <div class="form">
+          <div class="row input-container">
+            <h2 style="margin-left:270px; margin-bottom:21px;">Contact us</h2>
+             <hr style="height:3px;border-width:0;color:gray;background-color:gray; width:70px; margin: auto;">
+            <br>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <input type="text" required />
+                  <label>Name</label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                  <input type="text" required />
+                  <label>Email</label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                  <input type="text" required />
+                  <label>Phone Number</label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <textarea required></textarea>
+                  <label>Talk to us, we are listening...</label>
+                </div>
+              </div>
+
+
+              <input type="reset" value="Reset Form"  style ="background: rgba(255, 255, 255, .05);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+                border-top: 1px solid rgba(255, 255, 255, .1);
+                border-bottom: 1px solid rgba(255, 255, 255, .1);
+                border-radius: 30px;
+                color: #fff; width: 20%;margin-left: 180px;height:20px; text-align:center">
+                <input type="reset" value="Send"  style ="background: rgba(255, 255, 255, .05);
+                  box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+                  border-top: 1px solid rgba(255, 255, 255, .1);
+                  border-bottom: 1px solid rgba(255, 255, 255, .1);
+                  border-radius: 30px;
+                  color: #fff; width: 20%; height:20px; margin-left:40px; text-align:center">
+
+
+              </div>
+            </div>
+        </div>
+
+
+      </form>
+  </body>
+</html>
